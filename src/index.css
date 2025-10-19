@@ -1,0 +1,138 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+button:hover {
+    background-color: rgb(215, 7, 35);
+}
+
+@layer base {
+    :root {
+
+        /* Primary Color */
+        --primary: #f50057;
+        --on-primary: #ffffff;
+        
+        --primary-hover: rgb(215, 7, 35);
+        --on-primary-hover: #f7f7f7;
+
+        --primary-active: rgb(190, 6, 30);
+        --on-primary-active: #ffffff;
+        --primary-muted: #8d6875;
+
+        /* Headings & titles sizes */
+        --heading-h1: clamp(1.3rem, calc(1vw + 1rem), 1.8rem);
+        --heading-h2: clamp(1rem, calc(0.5vw + 0.8rem), 1.2rem);
+
+        /* Normal text sizes */
+        --text-t1: clamp(1rem, calc(0.5vw + 0.8rem), 1rem);
+        --text-t2: clamp(0.5rem, calc(0.5vw + 0.8rem), 0.9rem);
+        --text-t3: clamp(0.45rem, calc(0.5vw + 0.75rem), 0.8rem);
+
+        /* Icon button sizes */
+        --icon-btn-width: clamp(40px, 10vw, 80px);
+        --icon-btn-height: clamp(2rem, 5vh, 3rem);
+
+        /* Button sizes */
+        /* Small */
+        --btn-width-sm: clamp(80px, 10vw, 120px);
+        --btn-height-sm: clamp(2rem, 5vh, 3rem);
+        /* Medium */
+        --btn-width-md: clamp(140px, 15vw, 160px);
+        --btn-height-md: clamp(2.2rem, 5vh, 4.5rem);
+    }
+
+    .light {
+        --background: #ffffff;
+        --on-background: #000000;
+        
+        --surface: #d4d4d4;
+        --on-surface: #212226;
+
+        --button: var(--primary);
+        --on-button: var(--on-primary);
+        --button-hover: var(--primary-hover);
+        --button-active: var(--primary-active);
+        --button-muted: var(--primary-muted);
+
+        --controls: #d4d4d4;
+        --on-controls: #212226;
+        --on-controls-active: #212226;
+        --on-controls-hover: #212226;
+        --on-controls-muted: #212226;
+
+        --select: #d4d4d4;
+        --on-select: #212226;
+        --select-hover: #212226;
+        --select-active: #212226;
+        --select-muted: #d4d4d4;
+
+        --link: #10419b;
+        --link-hover: #1856ca;
+        --link-active: #0b2d6d;
+        --link-muted: #676a70;
+
+        --border-normal: #d4d4d4;
+        --border-medium: #d4d4d4;
+        --border-strong: #d4d4d4;
+
+        --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    }
+
+    .dark {
+        --background: #000000;
+        --on-background: #ffffff;
+
+        --surface: #212226;
+        --on-surface: #ffffff;
+
+        --button: var(--primary);
+        --on-button: var(--on-primary);
+        --button-hover: var(--primary-hover);
+        --button-active: var(--primary-active);
+        --button-muted: var(--primary-muted);
+
+        --controls: #212226;
+        --on-controls: #ffffff;
+        --on-controls-active: #ffffff;
+        --on-controls-hover: #ffffff;
+        --on-controls-muted: #ffffff;
+
+        --select: #212226;
+        --on-select: #ffffff;
+        --select-hover: #ffffff;
+        --select-active: #ffffff;
+        --select-muted: #767676;
+
+        --link: #212226;
+        --link-hover: #212226;
+        --link-active: #212226;
+        --link-muted: #212226;
+
+        --border-normal: #212226;
+        --border-medium: #212226;
+        --border-strong: #212226;
+
+        --box-shadow: 0 1px 1px rgba(0, 0, 0, 0.15);
+    }
+}
+
+
+/* <div className="min-h-screen bg-[#d4d4d4] p-3">
+            <button className="rounded-md bg-[#e31837] p-2 text-[#fff]">
+                Click Me
+            </button>
+        </div> */
+
+
+html,
+body,
+#root {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell,
+        "Open Sans", "Helvetica Neue", sans-serif;
+}
