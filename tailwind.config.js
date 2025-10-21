@@ -1,12 +1,27 @@
 /** @type {import('tailwindcss').Config} */
 export default {
+    darkMode: 'class',
     content: [
         "./index.html",
         "./src/**/*.{js,ts,jsx,tsx}",
     ],
     theme: {
+        /** Font weight usages
+         * font-light: 300,
+         * font-normal: 400,
+         * font-medium: 500,
+         * font-semibold: 600,
+         * font-bold: 700, 
+         */
+        fontFamily: {
+            sans: ['Montserrat', 'sans-serif'],
+            display: ['Montserrat', 'sans-serif'],
+            body: ['Montserrat', 'sans-serif'],
+        },
         extend: {
             colors: {
+                primary: "var(--primary)",
+                "primary-light": "var(--primary-light)",
                 background: {
                     DEFAULT: "var(--background)",
                     surface: "var(--surface)",
@@ -30,6 +45,7 @@ export default {
 
                     /** Text */
                     //text: value
+                    
                     
                     /** controls (Sliders, Toggles, Inputs, Checkboxes, Radios) */
                     //control: value
