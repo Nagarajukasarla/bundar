@@ -107,6 +107,14 @@
         --on-primary-active: #ffffff;
         --primary-muted: #8d6875;
 
+
+        /* Lighter Backgrounds */
+        --kitchen: #f0ffe6;
+        --snacks: #ffe6ea;
+        --bodycare: #faf7ff;
+        --washroom: #e6f5ff;
+        --special: #ffe6ef;
+
         /* Headings & titles sizes */
         --heading-h1: clamp(1.3rem, calc(1vw + 1rem), 1.8rem);
         --heading-h2: clamp(1rem, calc(0.5vw + 0.8rem), 1.2rem);

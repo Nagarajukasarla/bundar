@@ -20,7 +20,13 @@ export default {
         },
         extend: {
             colors: {
+                kitchen: "var(--kitchen)",
+                snacks: "var(--snacks)",
+                bodycare: "var(--bodycare)",
+                washroom: "var(--washroom)",
+                special: "var(--special)",
                 primary: "var(--primary)",
+                
                 "primary-light": "var(--primary-light)",
                 background: {
                     DEFAULT: "var(--background)",

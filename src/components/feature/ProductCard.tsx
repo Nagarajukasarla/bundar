@@ -35,19 +35,19 @@ const ProductCard: FC<ProductCardProps> = ({
                 <span className="text-[9px] md:text-[13px] text-gray-500 line-through font-[Roboto] mt-[1px] md:mt-[1px] ml-[3px] md:ml-[2px]">
                     ₹{originalPrice}
                 </span>
-                <span className="text-xxs md:text-[12px] text-green-600 font-semibold ml-1 md:ml-[2px]">
+                <span className="text-[10px] md:text-[12px] text-green-600 font-semibold ml-1 md:ml-[2px]">
                     SAVE ₹{savings}
                 </span>
             </div>
 
             {/* Pieces */}
-            <div className="text-xxs md:text-[13px] text-gray-600">{pieces}</div>
+            <div className="text-[12px] md:text-[13px] text-gray-600">{pieces}</div>
 
             {/* Product Name */}
             <div className="text-xs md:text-[13px] font-semibold text-gray-900 mb-1  line-clamp-2">{name}</div>
 
             {/* Variant */}
-            <div className="text-xxs text-blue-600 bg-blue-100 rounded-md p-[3px] max-w-[fit-content] truncate">
+            <div className="text-[10px] text-blue-600 bg-blue-100 rounded-md p-[3px] max-w-[fit-content] truncate">
                 {variant}
             </div>
 
