@@ -3,7 +3,7 @@ import type { ContainerProps } from "@/types/component";
 import React, { useState } from "react";
 
 interface MenuItem {
-    id: string;
+    id: number;
     label: string;
     icon: React.ReactNode;
 }
@@ -12,27 +12,27 @@ interface HeroicMenuProps extends ContainerProps { }
 
 const menuItems: MenuItem[] = [
     {
-        id: "1",
+        id: 1,
         label: "All",
         icon: <BagIcon className=""/>
     },
     {
-        id: "2",
+        id: 2,
         label: "Snacks",
         icon: <FoodIcon/>
     },
     {
-        id: "3",
+        id: 3,
         label: "Beauty",
         icon: <BeautyIcon />
     },
     {
-        id: "4",
+        id: 4,
         label: "Sale",
         icon: <RupeeIcon />
     },
     {
-        id: "5",
+        id: 5,
         label: "New",
         icon: <NewIcon />
     }
@@ -46,7 +46,7 @@ const MenuItemComponent: React.FC<{ item: MenuItem; isActive: boolean; onClick: 
     return (
         <div className="">
             <div
-                className={`flex flex-col md:flex-row items-center justify-center min-w-[70px] md:min-w-[100px] cursor-pointer transition-colors ${isActive ? "text-primary border-b border-primary" : ""
+                className={`flex flex-col md:flex-row items-center justify-center min-w-[70px] md:min-w-[100px] cursor-pointer transition-colors ${isActive ? "text-primary border-b-2 border-primary" : ""
                     }`}
                 onClick={onClick}
             >
@@ -60,7 +60,7 @@ const MenuItemComponent: React.FC<{ item: MenuItem; isActive: boolean; onClick: 
 };
 
 const HeroicMenu: React.FC<HeroicMenuProps> = ({ className }) => {
-    const [activeItem, setActiveItem] = useState<string>("all");
+    const [activeItem, setActiveItem] = useState<number>(1);
 
     return (
         <div className={className}>

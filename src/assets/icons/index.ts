@@ -3,3 +3,5 @@ export { default as BeautyIcon } from './BeautyIcon';
 export { default as RupeeIcon } from './RupeeIcon';
 export { default as NewIcon } from './NewIcon';
 export { default as FoodIcon } from "./FoodIcon";
+export { default as VegIcon } from "./VegIcon";
+export { default as NonVegIcon } from "./NonVegIcon";
