@@ -65,7 +65,7 @@ export interface ProductCardProps extends ContainerProps {
     /**
      * Number of reviews (optional)
      */
-    reviews?: number;
+    reviews?: string;
 }
 
-export type FeaturedWrapperTheme = "kitchen" | "snacks" | "bodycare" | "washroom" | "special";
+export type FeaturedWrapperTheme = "kitchen" | "snacks" | "bodycare" | "household" | "special";

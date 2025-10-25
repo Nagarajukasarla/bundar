@@ -5,6 +5,7 @@ import Header from "@/components/layout/Header";
 import CInput from "../core/CInput";
 import HeroicMenu from "../feature/HeroicMenu";
 import { SearchIcon } from "lucide-react";
+import BottomMenu from "./BottomMenu";
 
 const AppLayout: React.FC = () => {
     useTheme(); // Initialize theme at app level;
@@ -30,7 +31,11 @@ const AppLayout: React.FC = () => {
                 <HeroicMenu className="bg-transparent mx-auto py-2 md:py-5" />
             </div>
 
-            <Content className="px-2 md:px-8" />
+            <div className="relative">
+                <Content className="px-2 md:px-8 pb-16 md:pb-0" />
+                {/* BottomMenu only on mobile */}
+                <BottomMenu />
+            </div>
         </div>
     );
 };

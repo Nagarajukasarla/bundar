@@ -12,10 +12,18 @@ interface FeaturedWrapperProps extends ContainerProps {
     products: ProductCardProps[];
 }
 
+const themeClasses: Record<FeaturedWrapperTheme, string> = {
+    kitchen: "md:bg-kitchen",
+    snacks: "md:bg-snacks",
+    bodycare: "md:bg-bodycare",
+    household: "md:bg-household",
+    special: "md:bg-special",
+};
+
 const FeaturedWrapper: React.FC<FeaturedWrapperProps> = ({ className, title, heroicTitle, products, theme }) => {
     return (
         <div className={className}>
-            <div className={cn(`flex flex-col md:bg-${theme} md:p-4`, className)}>
+            <div className={cn("flex flex-col md:p-4", theme ? themeClasses[theme] : "", className)}>
                 <div className="flex justify-between items-center mb-2 pr-2 md:pr-0 md:mb-0 ">
                     {title}
                     <CButton className="md:hidden text-primary font-semibold bg-white">

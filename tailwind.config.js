@@ -23,7 +23,7 @@ export default {
                 kitchen: "var(--kitchen)",
                 snacks: "var(--snacks)",
                 bodycare: "var(--bodycare)",
-                washroom: "var(--washroom)",
+                household: "var(--washroom)",
                 special: "var(--special)",
                 primary: "var(--primary)",
                 
