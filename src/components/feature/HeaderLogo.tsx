@@ -48,11 +48,10 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({ className }) => {
                     </div>
                 </div>
 
-                <div className="flex items-center ml-1">
-                    <div className="relative flex items-center group w-full max-w-full">
-                        <button
-                            className="text-sm text-foreground hover:text-foreground flex items-center w-full"
-                            title="Snehapuri Colony, Kamareddy"
+                <div className="flex items-center ml-1" onClick={() => {}}>
+                    <div className="relative flex items-center group w-full max-w-full text-sm">
+                        <div
+                            className="flex items-center w-full bg-transparent cursor-pointer"
                         >
                             <div className="whitespace-nowrap overflow-hidden text-ellipsis max-w-full">
                                 <span className="font-semibold mr-1">Home -</span>
@@ -67,7 +66,7 @@ const HeaderLogo: React.FC<HeaderLogoProps> = ({ className }) => {
                             >
                                 <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                             </svg>
-                        </button>
+                        </div>
                     </div>
                 </div>
             </div>

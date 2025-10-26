@@ -69,3 +69,8 @@ export interface ProductCardProps extends ContainerProps {
 }
 
 export type FeaturedWrapperTheme = "kitchen" | "snacks" | "bodycare" | "household" | "special";
+
+export interface CategoryCardProps extends ContainerProps {
+    image: string;
+    name: string;
+}

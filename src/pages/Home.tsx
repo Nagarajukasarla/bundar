@@ -1,13 +1,12 @@
 import FeaturedWrapper from "@/components/feature/FeaturedWrapper";
+import { categories } from "@/constants/categories";
 import { products } from "@/constants/products";
-import type { ContainerProps } from "@/types/component";
 import React from "react";
+import CategorySection from "@/components/feature/CategorySection";
 
-interface ContentProps extends ContainerProps {}
-
-const Content: React.FC<ContentProps> = ({ className }) => {
+const Home: React.FC = () => {
     return (
-        <div className={className}>
+        <div>
             <FeaturedWrapper
                 theme="kitchen"
                 className="mt-2"
@@ -77,8 +76,28 @@ const Content: React.FC<ContentProps> = ({ className }) => {
                 }
                 products={products}
             />
+            <CategorySection
+                className="mt-8"
+                title="Grocery & Kitchen"
+                categories={categories.grocery}
+            />
+            <CategorySection
+                className="mt-8"
+                title="Snacks"
+                categories={categories.snacks}
+            />
+            <CategorySection
+                className="mt-8"
+                title="Self Care"
+                categories={categories.selfCare}
+            />
+            <CategorySection
+                className="mt-8"
+                title="Household"
+                categories={categories.household}
+            />
         </div>
     );
 };
 
-export default Content;
+export default Home;
