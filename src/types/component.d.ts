@@ -74,3 +74,5 @@ export interface CategoryCardProps extends ContainerProps {
     image: string;
     name: string;
 }
+
+export type ProfileMenuItemType = "Orders" | "Favourites";

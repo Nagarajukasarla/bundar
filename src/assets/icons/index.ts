@@ -15,3 +15,4 @@ export { default as HomeIcon } from "./HomeIconFilled";
 export { default as CartIconOutlined } from "./CartIconOutlined";
 export { default as CategoriesIconOutlined } from "./CategoriesIconOutlined";
 export { default as HomeIconOutlined } from "./HomeIconOutlined";
+export { default as FavouriteOutlined } from "./FavouriteOutlined";

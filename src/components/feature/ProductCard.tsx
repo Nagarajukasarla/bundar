@@ -13,7 +13,7 @@ const ProductCard: FC<ProductCardProps> = ({
     pieces,
     name,
     variant,
-    className
+    className,
     // rating,
     // reviews,
 }) => {
