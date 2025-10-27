@@ -1,12 +1,12 @@
-import React from "react";
+import type { FC } from "react";
+import type { ContainerProps } from "@/types/component";
 
-interface NewIconProps {
-    className?: string;
+interface NewIconProps extends ContainerProps {
     width?: string;
     height?: string;
 }
 
-const NewIcon: React.FC<NewIconProps> = ({ className = "", width = "20px", height = "20px" }) => {
+const NewIcon: FC<NewIconProps> = ({ className = "", width = "20px", height = "20px" }) => {
     return (
         <svg
             width={width}

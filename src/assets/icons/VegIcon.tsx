@@ -6,7 +6,7 @@ interface VegIconProps extends ContainerProps {
     height?: string;
 }
 
-const VegIcon: React.FC<VegIconProps> = ({ className = "", width = "24px", height = "24px" }) => {
+const VegIcon: React.FC<VegIconProps> = ({ className, width = "24px", height = "24px" }) => {
     return (
         <svg
             width={width}

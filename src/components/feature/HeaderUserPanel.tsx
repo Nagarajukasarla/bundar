@@ -1,12 +1,14 @@
 import type { ContainerProps } from "@/types/component";
 import React from "react";
 
-interface HeaderUserPanelProps extends ContainerProps {}
+interface HeaderUserPanelProps extends ContainerProps {
+    navigate: () => void;
+}
 
-const HeaderUserPanel: React.FC<HeaderUserPanelProps> = ({ className }) => {
+const HeaderUserPanel: React.FC<HeaderUserPanelProps> = ({ className, navigate }) => {
     return (
         <div className={className}>
-            <button className="p-2 rounded-full transition-colors">
+            <button className="p-2 rounded-full transition-colors" onClick={navigate}>
                 <div className="w-8 h-8 text-gray-700 dark:text-gray-300">
                     <svg width="100%" height="100%" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <circle cx="12" cy="9" r="3" stroke="currentColor" strokeWidth="1.5" />

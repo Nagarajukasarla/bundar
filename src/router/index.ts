@@ -1,6 +1,6 @@
 import { lazy } from "react";
 import { createBrowserRouter } from "react-router-dom";
-import appRoutes from "./AppRoutes";
+import appRoutes from "./appRoutes";
 import mainRoutes from "./mainRoutes";
 // import authRoutes from "./authRoutes";
 import React from "react";
