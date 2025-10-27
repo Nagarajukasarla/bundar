@@ -1,7 +1,18 @@
-import React from "react";
+import type { ContainerProps } from "@/types/component";
 
-const HomeIcon = (props: React.SVGProps<SVGSVGElement>) => (
-    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" {...props}>
+interface HomeIconProps extends ContainerProps {
+    width?: string;
+    height?: string;
+}
+const HomeIcon:React.FC<HomeIconProps> = ({ className, width = "24px", height = "24px" }) => (
+    <svg 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        xmlns="http://www.w3.org/2000/svg" 
+        className={className}
+        width={width}
+        height={height}
+    >
         <path
             fillRule="evenodd"
             clipRule="evenodd"
